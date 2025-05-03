@@ -1,22 +1,50 @@
-/*
-
-Add styles or override variables from the theme here.
-
+l/*
+Custom styles and variable overrides for Green Orbit Digital
+Brand palette, typography, and navbar settings
 */
 
-// Primary brand color
-$primary: #1c7c54; // Deep green
+// -------------------------------------
+// Brand Colour Palette
+// -------------------------------------
 
-// Secondary brand color
-$secondary: #85c1e9; // Light blue
+// Primary colours
+$primary:       #15eda3;  // Bright mint
+$primary-dark:  #127780;  // Deep teal
+$primary-mid:   #0fc083;  // Soft teal
+$white:         #ffffff;  // White
 
-// Font family
+// Secondary colours
+$secondary:     #2cffb7;  // Neon mint
+$secondary-mid: #18a1ad;  // Aqua blue
+$secondary-dark:#0c4d53;  // Rich blue-green
+
+// -------------------------------------
+// Typography
+// -------------------------------------
+
 $font-family-sans-serif: 'Inter', sans-serif;
 
-// Navbar background and text color
-$navbar-dark-bg: #001b1b;
-$navbar-dark-color: #ffffff;
+// -------------------------------------
+// Navbar
+// -------------------------------------
 
-// Link color
+$navbar-bg: $white;
+$navbar-light-color: $primary-dark;
+$navbar-light-hover-color: $primary-mid;
+$navbar-brand-font-size: 1.75rem;
+
+$navbar-dark-bg: $primary-dark;
+$navbar-dark-color: $white;
+
+// Logo in navbar
+.navbar-brand img {
+  max-height: 48px;
+}
+
+// -------------------------------------
+// Link Styles
+// -------------------------------------
+
 $link-color: $primary;
 
+// Add custom button styles, card colours, or hover states here if needed
