@@ -14,7 +14,7 @@ title: Green Orbit Digital Hub
 {{< /blocks/cover >}}
 
 
-{{% blocks/lead color="primary-mid" %}}
+{{% blocks/lead color="primary" %}}
 Green Orbit Digital empowers businesses to harness the potential of space technology and sustainability through strategic, creative, and data-driven marketing.  
 This hub provides access to our team handbook, client portals, project resources, and thought leadership.
 
