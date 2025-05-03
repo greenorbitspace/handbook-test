@@ -14,7 +14,7 @@ title: Green Orbit Digital Hub
 {{< /blocks/cover >}}
 
 
-{{% blocks/lead color="primary" %}}
+{{% blocks/lead color="primary-mid" %}}
 Green Orbit Digital empowers businesses to harness the potential of space technology and sustainability through strategic, creative, and data-driven marketing.  
 This hub provides access to our team handbook, client portals, project resources, and thought leadership.
 
@@ -22,14 +22,14 @@ Explore. Collaborate. Lead change.
 {{% /blocks/lead %}}
 
 
-{{% blocks/section color="dark" type="row" %}}
+{{% blocks/section color="primary-dark" type="row" %}}
 
 {{% blocks/feature icon="fas fa-seedling" title="New: Sustainability Impact Dashboards" %}}
 Track campaign carbon metrics and social impact KPIs with our new reporting tools.
 Stay informed, stay responsible.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-github" title="Collaborate with Us" url="https://github.com/greenorbitdigital" %}}
+{{% blocks/feature icon="fab fa-github" title="Collaborate with Us" url="https://github.com/greenorbitspace" %}}
 We welcome contributions to our sustainability toolkits and open knowledge assets.  
 Use GitHub pull requests to suggest updates or get involved.
 {{% /blocks/feature %}}
