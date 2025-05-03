@@ -4,3 +4,19 @@ Add styles or override variables from the theme here.
 
 */
 
+// Primary brand color
+$primary: #1c7c54; // Deep green
+
+// Secondary brand color
+$secondary: #85c1e9; // Light blue
+
+// Font family
+$font-family-sans-serif: 'Inter', sans-serif;
+
+// Navbar background and text color
+$navbar-dark-bg: #001b1b;
+$navbar-dark-color: #ffffff;
+
+// Link color
+$link-color: $primary;
+
