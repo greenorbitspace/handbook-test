@@ -7,16 +7,29 @@ Brand palette, typography, and navbar settings
 // Brand Colour Palette
 // -------------------------------------
 
+
+// Soft and deep teal shades
+$greenorbit-soft-teal: #A0DED0;
+$greenorbit-deep-teal: #005F5D;
+
+// Override Docsy theme colours
+$primary: $greenorbit-soft-teal;
+$primary-dark: $greenorbit-deep-teal;
+$primary-mid: mix($greenorbit-soft-teal, $greenorbit-deep-teal, 60%);
+$info: $greenorbit-soft-teal;
+
+
+
 // Primary colours
-$primary:       #15eda3;  // Bright mint
-$primary-dark:  #127780;  // Deep teal
-$primary-mid:   #0fc083;  // Soft teal
-$white:         #ffffff;  // White
+//$primary:       #15eda3;  // Bright mint
+//$primary-dark:  #127780;  // Deep teal
+//$primary-mid:   #0fc083;  // Soft teal
+//$white:         #ffffff;  // White
 
 // Secondary colours
-$secondary:     #2cffb7;  // Neon mint
-$secondary-mid: #18a1ad;  // Aqua blue
-$secondary-dark:#0c4d53;  // Rich blue-green
+//$secondary:     #2cffb7;  // Neon mint
+//$secondary-mid: #18a1ad;  // Aqua blue
+//$secondary-dark:#0c4d53;  // Rich blue-green
 
 // -------------------------------------
 // Typography
