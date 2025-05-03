@@ -32,4 +32,4 @@ different sections of the documentation and site for more ideas.
 # This is another section
 {.text-center}
 
-{{% /blocks/section %}}
+{{% /blocks/section %}} 
