@@ -15,7 +15,6 @@ $greenorbit-deep-teal: #005F5D;
 // Override Docsy theme colours
 $primary: $greenorbit-soft-teal;
 $primary-dark: $greenorbit-deep-teal;
-$primary-mid: mix($greenorbit-soft-teal, $greenorbit-deep-teal, 60%);
 $info: $greenorbit-soft-teal;
 
 
@@ -43,10 +42,10 @@ $font-family-sans-serif: 'Inter', sans-serif;
 
 $navbar-bg: $white;
 $navbar-light-color: $primary-dark;
-$navbar-light-hover-color: $primary-mid;
+$navbar-light-hover-color: $primary;
 $navbar-brand-font-size: 1.75rem;
 
-$navbar-dark-bg: $primary-mid;
+$navbar-dark-bg: $primary;
 $navbar-dark-color: $white;
 
 // Logo in navbar
@@ -58,6 +57,6 @@ $navbar-dark-color: $white;
 // Link Styles
 // -------------------------------------
 
-$link-color: $primary-mid;
+$link-color: $primary;
 
 // Add custom button styles, card colours, or hover states here if needed
