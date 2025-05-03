@@ -1,12 +1,38 @@
 # Hugo build configuration for Netlify
-# (https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify)
+#(https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify)
+
+# Netlify configuration for Green Orbit Digital Hub
+# https://greenorbit.space
 
 [build]
-command = "npm run build:preview"
-publish = "public"
+  command = "hugo"
+  publish = "public"
 
-[build.environment]
-GO_VERSION = "1.22.2"
+[context.production.environment]
+  HUGO_VERSION = "0.125.0"           # Ensure compatibility with Docsy 0.7.0+
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
 
-[context.production]
-command = "npm run build:production"
+# Redirects all paths to index.html (SPA behaviour for pretty URLs in Hugo)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Security and performance headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src * data:; font-src 'self';"
+
+# Deploy preview context for PRs and feature branches
+[context.deploy-preview]
+  command = "hugo --buildFuture --buildDrafts --minify"
+
+# Branch deploys
+[context.branch-deploy]
+  command = "hugo --buildFuture --buildDrafts --minify"
